@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test T.js</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    .tests { list-style: none; margin-top: 2rem }
+    .success { color: green; }
+    .failure { color: red; }
+    .title {
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .hint {
+      text-align: center;
+      color: #666;
+    }
+    .content {
+	    max-width: 30rem;
+      margin: 4rem auto auto auto;
+	    margin-left: auto;
+	    margin-right: auto;
+    }
+  </style>
+</head>
+<body class="body">
+  <main class="content">
+    <h1 class="title">T</h1>
+    <h2 class="subtitle">Tests</h2>
+
+    <p class="hint">All tests in <a href="test.js">/test.js</a> are automatically run.</p>
+    <p class="hint">We use T library to dynamically add tests results:</p>
+
+
+    <ul id="tests" class="tests"">
+      <!-- Here you will see test results -->
+    </ul>
+  </main>
+
+  <script src="t.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>
